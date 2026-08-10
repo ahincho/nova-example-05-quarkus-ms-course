@@ -8,18 +8,17 @@ import static org.hamcrest.CoreMatchers.is;
 
 /**
  * Integration test that boots the Quarkus runtime on the test port
- * and exercises the welcome endpoint end-to-end.
+ * and verifies the application starts and reports itself healthy.
  */
 @QuarkusTest
 class ApplicationTest {
 
     @Test
-    void welcomeEndpointReturnsExpectedJson() {
+    void healthEndpointReportsUp() {
         given()
-                .when().get("/api/notifications/email/welcome")
+                .when().get("/q/health")
                 .then()
                 .statusCode(200)
-                .body("sent", is(true))
-                .body("channel", is("email"));
+                .body("status", is("UP"));
     }
 }

@@ -54,10 +54,6 @@
             <id>nova-packages-read-bom</id>
             <url>https://maven.pkg.github.com/ahincho/nova-java-quarkus-parent</url>
         </repository>
-        <repository>
-            <id>nova-packages-read-starter</id>
-            <url>https://maven.pkg.github.com/ahincho/nova-java-notifications-quarkus-extension</url>
-        </repository>
     </repositories>
 
     <dependencies>
@@ -77,13 +73,6 @@
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-health</artifactId>
-        </dependency>
-
-        <!-- Nova Platform notifications adapter (inherited from parent, declared here for clarity) -->
-        <dependency>
-            <groupId>pe.edu.nova.java.starters</groupId>
-            <artifactId>nova-notifications-quarkus-extension</artifactId>
-            <version>1.1.6</version>
         </dependency>
 
         <!-- Test -->
