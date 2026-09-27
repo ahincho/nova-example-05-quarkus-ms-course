@@ -52,7 +52,7 @@
     <repositories>
         <repository>
             <id>nova-packages-read-bom</id>
-            <url>https://maven.pkg.github.com/ahincho/nova-java-quarkus-parent</url>
+            <url>https://maven.pkg.github.com/ahincho/nova-java-15-quarkus-parent</url>
         </repository>
     </repositories>
 
