@@ -3,7 +3,7 @@
 Example instance consuming the
 [`pe.edu.nova.java:nova-quarkus-parent:1.0.0`](https://github.com/ahincho/nova-java-15-quarkus-parent)
 POM. The Quarkus counterpart of
-[`instances/ms-course`](../ms-course/pom.xml) (the Spring Boot instance).
+[`ahincho/nova-example-02-spring-boot-ms-course`](https://github.com/ahincho/nova-example-02-spring-boot-ms-course) (the Spring Boot instance).
 
 ## Stack
 
@@ -59,4 +59,4 @@ quarkus.http.test-port=8081
 
 - [`ahincho/nova-java-15-quarkus-parent`](https://github.com/ahincho/nova-java-15-quarkus-parent) — the parent POM consumed by this instance.
 - [`ahincho/nova-java-18-quarkus-archetype`](https://github.com/ahincho/nova-java-18-quarkus-archetype) — the archetype that can generate similar multi-module instances.
-- [`instances/ms-course`](../ms-course) — the Spring Boot counterpart.
+- [`ahincho/nova-example-02-spring-boot-ms-course`](https://github.com/ahincho/nova-example-02-spring-boot-ms-course) — the Spring Boot counterpart.
