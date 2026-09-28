@@ -1,19 +1,19 @@
 # ms-course-quarkus
 
 Example instance consuming the
-[`pe.edu.nova.java:nova-quarkus-parent:1.0.0`](https://github.com/ahincho/nova-java-15-quarkus-parent)
+[`pe.edu.nova.java:nova-quarkus-parent:2.0.0`](https://github.com/ahincho/nova-java-15-quarkus-parent)
 POM. The Quarkus counterpart of
 [`ahincho/nova-example-02-spring-boot-ms-course`](https://github.com/ahincho/nova-example-02-spring-boot-ms-course) (the Spring Boot instance).
 
 ## Stack
 
 - Java 25
-- Quarkus 3.33.2.1 LTS
+- Quarkus 3.33.3.3 LTS
 
 ## Build
 
 ```bash
-./mvnw clean verify
+mvn clean verify
 ```
 
 The `verify` phase runs: compile + tests + `quarkus:build`. Output: `target/quarkus-app/quarkus-run.jar`.
@@ -21,7 +21,7 @@ The `verify` phase runs: compile + tests + `quarkus:build`. Output: `target/quar
 ## Run
 
 ```bash
-./mvnw quarkus:dev
+mvn quarkus:dev
 ```
 
 Then:
@@ -37,13 +37,13 @@ curl http://localhost:8080/q/health
 <parent>
     <groupId>pe.edu.nova.java</groupId>
     <artifactId>nova-quarkus-parent</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
 </parent>
 ```
 
 The parent provides:
 - Java 25 (compiler `--release 25`)
-- Quarkus 3.33.2.1 LTS (`io.quarkus.platform:quarkus-bom` pre-imported via `<dependencyManagement>`)
+- Quarkus 3.33.3.3 LTS (`io.quarkus.platform:quarkus-bom`, pre-imported through `nova-quarkus-bom` in `<dependencyManagement>`)
 - Maven plugins: compiler 3.14, surefire 3.5.3, failsafe 3.5.3
 
 ## Configuration
