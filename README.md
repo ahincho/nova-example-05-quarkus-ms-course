@@ -60,3 +60,9 @@ quarkus.http.test-port=8081
 - [`ahincho/nova-java-15-quarkus-parent`](https://github.com/ahincho/nova-java-15-quarkus-parent) — the parent POM consumed by this instance.
 - [`ahincho/nova-java-18-quarkus-archetype`](https://github.com/ahincho/nova-java-18-quarkus-archetype) — the archetype that can generate similar multi-module instances.
 - [`ahincho/nova-example-02-spring-boot-ms-course`](https://github.com/ahincho/nova-example-02-spring-boot-ms-course) — the Spring Boot counterpart.
+
+## License
+
+Eclipse Public License 2.0 — see [LICENSE](LICENSE).
+
+Copyright © 2026 Angel Hincho.
